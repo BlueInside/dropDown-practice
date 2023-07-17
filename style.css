@@ -2,15 +2,32 @@
   display: flex;
   justify-content: space-around;
   list-style: none;
+  background-color: rgb(185, 154, 159);
 }
 .nav-item {
   padding: 30px;
+  cursor: pointer;
+}
+
+.nav-item li {
+  background-color: rgb(42, 187, 163);
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid grey;
 }
 
 .nav-dropdown {
   list-style: none;
+  position: fixed;
+  display: flex;
+  padding-left: 0;
+  padding-top: 10px;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 1;
+  transition: opacity 300ms ease-in-out;
 }
 
 .hidden {
-  display: none;
+  opacity: 0;
 }
